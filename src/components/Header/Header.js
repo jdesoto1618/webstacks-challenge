@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <nav className='navbar'>
       <Link className='nav-link home-nav-link' to='/'>
-        Brackets
+        <span className='nav-brackets-logo'></span>
       </Link>
     </nav>
   )
