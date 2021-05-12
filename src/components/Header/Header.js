@@ -3,7 +3,11 @@ import { Link } from "gatsby"
 
 const Header = () => {
   return (
-    <h1>New Header</h1>
+    <nav className='navbar'>
+      <Link className='nav-link home-nav-link' to='/'>
+        Brackets
+      </Link>
+    </nav>
   )
 }
 
