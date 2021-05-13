@@ -8,11 +8,11 @@
 import * as React from "react"
 import Header from "./Header/Header"
 import Hero from './Hero/Hero'
-import { pageContainer } from '../styles/layout.module.css'
+import * as layoutStyles from '../styles/layout.module.css'
 
 const Layout = () => {
   return (
-    <div className={pageContainer}>
+    <div className={layoutStyles.pageContainer}>
       <>
         <Header />
           <main>
