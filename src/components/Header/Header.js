@@ -17,7 +17,8 @@ export default function Header() {
           <Link className={headerStyles.navLink} to='/'>Sign In</Link>
         </li>
         <li className={headerStyles.headerNavLi}>
-          <Link className={headerStyles.navLink} to='/'>Get started
+          <Link className={headerStyles.navLink} to='/'>
+            <span className={headerStyles.getStarted}>Get started</span>
             <span className={headerStyles.caretRight}>&gt;</span>
           </Link>
         </li>
