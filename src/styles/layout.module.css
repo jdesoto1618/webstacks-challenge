@@ -40,7 +40,12 @@ p {
 }
 
 a {
+  font-size: 1.44rem;
+  font-weight: 500;
+  line-height: 1.21;
+  color: #fff;
   text-decoration: none;
+  position: relative;
 }
 
 @media screen and (min-width: 40em) {

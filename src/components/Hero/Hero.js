@@ -18,11 +18,11 @@ const Hero = () => {
 
       <div className={heroStyles.heroCtaContainer}>
         <Link className={heroStyles.getStartedButton} to='/'>
-          <span>Get started</span>
+          <span className={heroStyles.ctaText}>Get started</span>
           <span className={heroStyles.caretRight}>&gt;</span>
         </Link>
         <Link className={heroStyles.requestDemoButton} to='/'>
-          <span>Request a demo</span>
+          <span className={heroStyles.ctaText}>Request a demo</span>
           <span className={heroStyles.caretRight}>&gt;</span>
         </Link>
       </div>

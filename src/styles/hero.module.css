@@ -42,7 +42,11 @@
   z-index: 1;
 }
 
-.get-started-button:before {
+.get-started-button {
+  margin-right: 2rem;
+}
+
+.get-started-button:before, .request-demo-button:before {
   content: '';
   position: absolute;
   top: 0;
@@ -63,12 +67,27 @@
   background-color: #767D84;
 }
 
+.request-demo-button:before {
+  background-color: #464b4f;
+}
+
+.cta-text {
+  position: relative;
+  z-index: 10;
+}
+
+.caret-right {
+  margin-left: 0.8rem;
+  position: relative;
+  z-index: 10;
+}
+
 @media screen and (min-width: 64em) {
   .hero-title-large span {
     display: block;
   }
 
-  .get-started-button:hover:before {
+  .get-started-button:hover:before, .request-demo-button:hover:before {
     transform: scale(1.0);
   }
 }
