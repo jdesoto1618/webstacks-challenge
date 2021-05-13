@@ -8,6 +8,7 @@
 import * as React from "react"
 import Header from "./Header/Header"
 import Hero from './Hero/Hero'
+import Cards from './Cards/Cards'
 import * as layoutStyles from '../styles/layout.module.css'
 
 const Layout = () => {
@@ -17,6 +18,7 @@ const Layout = () => {
         <Header />
           <main>
             <Hero />
+            <Cards />
           </main>
       </>
     </div>

@@ -30,6 +30,7 @@
 .hero-cta-container {
   position: relative;
   z-index: 50;
+  display: flex;
 }
 
 .get-started-button, .request-demo-button {

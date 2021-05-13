@@ -1,0 +1,36 @@
+.cards-container {
+  position: relative;
+  z-index: 50;
+  margin-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  width: 37rem;
+  min-height: 24rem;
+  background-color: #fff;
+  border-radius: 0.4rem;
+}
+
+@media screen and (min-width: 40em) {
+  .cards-container {
+    margin-top: 9rem;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .cards-container {
+    margin-top: 11.2rem;
+    flex-direction: row;
+  }
+
+  .card {
+    margin-right: 3rem;
+  }
+
+  .card:last-of-type {
+    margin-right: 0;
+  }
+}
