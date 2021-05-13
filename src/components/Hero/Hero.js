@@ -1,4 +1,5 @@
 import * as React from "react"
+import { Link } from "gatsby"
 import * as heroStyles from '../../styles/hero.module.css';
 
 const Hero = () => {
@@ -16,8 +17,14 @@ const Hero = () => {
       </div>
 
       <div className={heroStyles.heroCtaContainer}>
-        <button>Get started &gt;</button>
-        <button>Request a demo &gt;</button>
+        <Link className={heroStyles.getStartedButton} to='/'>
+          <span>Get started</span>
+          <span className={heroStyles.caretRight}>&gt;</span>
+        </Link>
+        <Link className={heroStyles.requestDemoButton} to='/'>
+          <span>Request a demo</span>
+          <span className={heroStyles.caretRight}>&gt;</span>
+        </Link>
       </div>
     </>
   )

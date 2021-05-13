@@ -14,7 +14,7 @@ body {
   padding: 0 2rem;
 }
 
-h1, h2, h3, h4, h5, p {
+h1, h2, h3, h4, h5, p, a {
   color: white;
 }
 
@@ -37,6 +37,10 @@ p {
   font-weight: 200;
   font-size: 1.4rem;
   line-height: 1.21;
+}
+
+a {
+  text-decoration: none;
 }
 
 @media screen and (min-width: 40em) {
