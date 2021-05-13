@@ -1,14 +1,11 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import { navbar, homeNavLink } from "../../styles/header.module.css"
 
-const Header = () => {
+export default function Header() {
   return (
-    <nav className='navbar'>
-      <Link className='nav-link home-nav-link' to='/'>
-        <span className='nav-brackets-logo'></span>
-      </Link>
+    <nav className={navbar}>
+      <Link className={homeNavLink} to='/' />
     </nav>
   )
 }
-
-export default Header

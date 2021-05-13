@@ -7,13 +7,19 @@
 
 import * as React from "react"
 import Header from "./Header/Header"
+import Hero from './Hero/Hero'
+import { pageContainer } from '../styles/layout.module.css'
 
-const Layout = ({ children }) => {
+const Layout = () => {
   return (
-    <>
-      <Header />
-        <main>{children}</main>
-    </>
+    <div className={pageContainer}>
+      <>
+        <Header />
+          <main>
+            <Hero />
+          </main>
+      </>
+    </div>
   )
 }
 
