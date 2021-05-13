@@ -20,11 +20,16 @@
 
 .hero-tagline-container {
   position: relative;
-  z-index: 50;
+  z-index: 40;
+  padding-top: 10rem;
 }
 
 .hero-tagline {
   margin: 0 0 2.8rem;
+}
+
+.hero-title-small {
+  margin-top: 0;
 }
 
 .hero-cta-container {
@@ -84,6 +89,10 @@
 }
 
 @media screen and (min-width: 64em) {
+  .hero-tagline-container {
+    padding-top: 3rem;
+  }
+
   .hero-title-large span {
     display: block;
   }
