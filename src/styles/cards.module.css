@@ -13,12 +13,62 @@
   min-height: 24rem;
   background-color: #fff;
   border-radius: 0.4rem;
+  position: relative;
+}
+
+.card * {
+  color: #000;
+}
+
+.card-image {
+  position: absolute;
+  top: 0;
+  bottom: auto;
+  left: auto;
+  right: 0;
+  width: 10rem;
+}
+
+.card-text-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: auto;
+  bottom: 0;
+  padding: 0 3.2rem 3.2rem;
+}
+
+.card-title {
+  text-transform: capitalize;
+  margin-top: 0;
+  margin-bottom: 1.6rem;
+}
+
+.card-tagline {
+  margin-top: 0;
+  margin-bottom: 2.4rem;
+  font-size: 1.44rem;
+}
+
+.cta-text {
+  color: #F65928;
+  font-size: 1.44rem;
+  font-weight: 500;
+}
+
+.caret-right {
+  color: #F65928;
+  margin-left: 0.8rem;
 }
 
 @media screen and (min-width: 40em) {
   .cards-container {
     margin-top: 9rem;
     padding-bottom: 9rem;
+  }
+
+  .card-image {
+    width: 14rem;
   }
 }
 
@@ -35,5 +85,29 @@
 
   .card:last-of-type {
     margin-right: 0;
+  }
+
+  .card-image {
+    width: 18.8rem;
+    top: -7.33rem;
+    right: -2.75rem;
+  }
+}
+
+@media screen and (min-width: 80em) {
+  .card {
+    width: 27rem;
+  }
+}
+
+@media screen and (min-width: 100em) {
+  .card {
+    width: 35rem;
+  }
+}
+
+@media screen and (min-width: 106.25em) {
+  .card {
+    width: 37rem;
   }
 }
