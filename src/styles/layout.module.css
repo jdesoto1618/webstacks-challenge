@@ -14,9 +14,46 @@ body {
   padding: 0 2rem;
 }
 
+h1, h2, h3, h4, h5, p {
+  color: white;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 3.75rem;
+  line-height: 1.23;
+  margin: 0 0 2.4rem;
+}
+
+h5 {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.22;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+}
+
+p {
+  font-weight: 200;
+  font-size: 1.4rem;
+  line-height: 1.21;
+}
+
 @media screen and (min-width: 40em) {
   .page-container {
     padding: 0 5rem;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  h5 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 1.6rem;
   }
 }
 
@@ -24,10 +61,26 @@ body {
   .page-container {
     padding: 0 10rem;
   }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  h5 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1.8rem;
+  }
 }
 
 @media screen and (min-width: 80em) {
   .page-container {
     padding: 0 20rem;
+  }
+
+  h1 {
+    font-size: 5.6rem;
   }
 }
