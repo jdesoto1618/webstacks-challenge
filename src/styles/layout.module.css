@@ -5,10 +5,28 @@ html {
 body {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
 }
 
 .page-container {
   position: relative;
   height: 100vh;
+  padding: 0 2rem;
+}
+
+@media screen and (min-width: 40em) {
+  .page-container {
+    padding: 0 5rem;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .page-container {
+    padding: 0 10rem;
+  }
+}
+
+@media screen and (min-width: 80em) {
+  .page-container {
+    padding: 0 20rem;
+  }
 }
