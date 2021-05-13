@@ -92,6 +92,27 @@
     top: -7.33rem;
     right: -2.75rem;
   }
+
+  .learn-more:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: auto;
+    bottom: -0.5rem;
+    left: 0;
+    right: auto;
+    width: 9.6rem;
+    height: 0.3rem;
+    background-color: #F65928;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s linear;
+  }
+
+  .learn-more:hover:before {
+    transform: scaleX(1.0);
+    transform-origin: left;
+  }
 }
 
 @media screen and (min-width: 80em) {
