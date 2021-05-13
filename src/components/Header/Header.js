@@ -1,11 +1,13 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import { HiOutlineMenuAlt3 } from 'react-icons/hi'
 import * as headerStyles from "../../styles/header.module.css"
 
 const Header = () => {
   return (
     <>
+      <div className={headerStyles.mobileHomeLinkContainer}>
+        <Link className={headerStyles.homeNavLink} to='/' />
+      </div>
       <Link className={headerStyles.mobileNavContainer} to='/'>
         <span className={headerStyles.mobileNavBars}></span>
       </Link>
