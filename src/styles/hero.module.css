@@ -27,8 +27,13 @@
   margin: 0 0 2.8rem;
 }
 
+.hero-cta-container {
+  position: relative;
+  z-index: 50;
+}
+
 @media screen and (min-width: 64em) {
-  .hero-tagline-h1 span {
+  .hero-title-large span {
     display: block;
   }
 }

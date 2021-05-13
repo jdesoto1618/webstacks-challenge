@@ -7,8 +7,8 @@ const Hero = () => {
       <div className={heroStyles.heroContainer}></div>
       <div className={heroStyles.heroOverlay}></div>
       <div className={heroStyles.heroTaglineContainer}>
-        <h5 className={heroStyles.heroTaglineSmall}>America’s #1 Rated Adventure Platform</h5>
-        <h1 className={heroStyles.heroTaglineH1}>
+        <h5 className={heroStyles.heroTitleSmall}>America’s #1 Rated Adventure Platform</h5>
+        <h1 className={heroStyles.heroTitleLarge}>
           <span>Take control of </span>
           <span>your weekends</span>
         </h1>
