@@ -25,7 +25,29 @@
   list-style: none;
 }
 
+.header-nav-li {
+  margin-right: 3.2rem;
+}
+
+.header-nav-li:last-of-type {
+  margin-right: 0;
+}
+
+.header-nav-li:last-of-type a {
+  padding: 1.1rem 2.4rem;
+  border: none;
+  border-radius: 0.3rem;
+  background-color: #2885F6;
+}
+
 .nav-link {
   text-decoration: none;
   color: #fff;
+  font-size: 1.44rem;
+  font-weight: 500;
+  line-height: 1.21;
+}
+
+.caret-right {
+  margin-left: 0.8rem;
 }

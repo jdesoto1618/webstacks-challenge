@@ -7,17 +7,19 @@ export default function Header() {
     <nav className={headerStyles.navbar}>
       <Link className={headerStyles.homeNavLink} to='/' />
       <ul className={headerStyles.headerNavUl}>
-        <li>
+        <li className={headerStyles.headerNavLi}>
           <Link className={headerStyles.navLink} to='/'>What's included?</Link>
         </li>
-        <li>
+        <li className={headerStyles.headerNavLi}>
           <Link className={headerStyles.navLink} to='/'>Pricing</Link>
         </li>
-        <li>
+        <li className={headerStyles.headerNavLi}>
           <Link className={headerStyles.navLink} to='/'>Sign In</Link>
         </li>
-        <li>
-          <Link className={headerStyles.navLink} to='/'>Get Started</Link>
+        <li className={headerStyles.headerNavLi}>
+          <Link className={headerStyles.navLink} to='/'>Get started
+            <span className={headerStyles.caretRight}>&gt;</span>
+          </Link>
         </li>
       </ul>
     </nav>
