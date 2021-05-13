@@ -66,6 +66,22 @@
   font-size: 1.44rem;
   font-weight: 500;
   line-height: 1.21;
+  transition: color 0.3s linear;
+  position: relative;
+}
+
+.nav-link:before {
+  content: '';
+  position: absolute;
+  top: auto;
+  bottom: -1rem;
+  left: 0;
+  right: auto;
+  width: 100%;
+  height: 0.3rem;
+  background-color: #2885F6;
+  opacity: 0;
+  transition: opacity 0.3s linear, bottom 0.3s linear;
 }
 
 .get-started {
@@ -80,6 +96,15 @@
 }
 
 @media screen and (min-width: 64em) {
+  .nav-link:hover:before {
+    opacity: 1;
+    bottom: -0.5rem;
+  }
+
+  .header-nav-li:last-of-type a {
+    color: #fff;
+  }
+
   .header-nav-li:last-of-type a:hover:before {
     transform: scale(1.0);
   }
