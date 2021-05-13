@@ -87,6 +87,11 @@
     display: block;
   }
 
+  .weekend-text:hover {
+    transition: text-shadow 0.3s linear;
+    text-shadow: 0.15rem 0.15rem 0 #2885F6;
+  }
+
   .get-started-button:hover:before, .request-demo-button:hover:before {
     transform: scale(1.0);
   }

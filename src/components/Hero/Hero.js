@@ -11,7 +11,7 @@ const Hero = () => {
         <h5 className={heroStyles.heroTitleSmall}>America’s #1 Rated Adventure Platform</h5>
         <h1 className={heroStyles.heroTitleLarge}>
           <span>Take control of </span>
-          <span>your weekends</span>
+          <span className={heroStyles.weekendText}>your weekends</span>
         </h1>
         <p className={heroStyles.heroTagline}>Find adventure anywhere.</p>
       </div>
