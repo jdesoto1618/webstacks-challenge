@@ -55,6 +55,7 @@ export const GlobalStyles = createGlobalStyle`
   .page-container {
     position: relative;
     padding: 0 2rem;
+    overflow: hidden;
   }
 
   @media screen and (min-width: 40em) {
