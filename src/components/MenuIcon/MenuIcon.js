@@ -1,5 +1,4 @@
 import React from 'react';
-import { bool, func } from 'prop-types';
 import { StyledIcon } from './MenuIcon.styled'
 
 const MenuIcon = ({ isOpen, setIsOpen }) => {
@@ -11,10 +10,5 @@ const MenuIcon = ({ isOpen, setIsOpen }) => {
     </StyledIcon>
   )
 }
-
-MenuIcon.propTypes = {
-  open: bool.isRequired,
-  setOpen: func.isRequired,
-};
 
 export default MenuIcon

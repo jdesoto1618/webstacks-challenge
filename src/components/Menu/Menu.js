@@ -1,5 +1,4 @@
 import React from 'react';
-import { bool } from 'prop-types';
 import { StyledMenu } from './Menu.styled';
 import { Link } from "gatsby"
 
@@ -13,9 +12,5 @@ const Menu = ({ isOpen }) => {
     </StyledMenu>
   )
 }
-
-Menu.propTypes = {
-  open: bool.isRequired,
-};
 
 export default Menu
