@@ -15,6 +15,7 @@
   border-radius: 0.4rem;
   position: relative;
   margin-bottom: 3rem;
+  text-align: center;
 }
 
 .card:last-of-type {
@@ -26,21 +27,13 @@
 }
 
 .card-image {
-  position: absolute;
-  top: 0;
-  bottom: auto;
-  left: 50%;
-  right: 0;
-  transform: translateX(-50%);
   width: 10rem;
 }
 
 .card-text-container {
-  position: absolute;
   display: flex;
   flex-direction: column;
-  top: auto;
-  bottom: 0;
+  align-items: flex-start;
   padding: 0 3.2rem 3.2rem;
 }
 
@@ -85,21 +78,28 @@
     flex-direction: row;
   }
 
+  .card-image {
+    position: absolute;
+    top: -5.75rem;
+    bottom: auto;
+    left: auto;
+    right: -2.75rem;
+  }
+
+  .card-text-container {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+  }
+
   .card {
     margin-right: 3rem;
     margin-bottom: 0;
+    text-align: left;
   }
 
   .card:last-of-type {
     margin-right: 0;
-  }
-
-  .card-image {
-    width: 18.8rem;
-    top: -7.33rem;
-    left: auto;
-    right: -2.75rem;
-    transform: translateX(0px);
   }
 
   .learn-more:before {
