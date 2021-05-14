@@ -36,6 +36,7 @@
   position: relative;
   z-index: 50;
   display: flex;
+  justify-content: center;
 }
 
 .get-started-button, .request-demo-button {
@@ -104,5 +105,9 @@
 
   .get-started-button:hover:before, .request-demo-button:hover:before {
     transform: scale(1.0);
+  }
+
+  .hero-cta-container {
+    justify-content: flex-start;
   }
 }
