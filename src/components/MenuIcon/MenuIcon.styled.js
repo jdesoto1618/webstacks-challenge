@@ -30,4 +30,10 @@ export const StyledIcon = styled.button`
     position: relative;
     transform-origin: 0.1rem;
   }
+
+  &.opened {
+    div {
+      background: ${({ theme }) => theme.black};
+    }
+  }
 `
