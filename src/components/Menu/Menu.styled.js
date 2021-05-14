@@ -15,7 +15,7 @@ export const StyledMenu = styled.nav`
   right: 0;
   transform: ${({ isOpen }) => isOpen ? 'translateX(0px)' : 'translateX(100%)'};
   transition: transform 0.3s ease-in-out;
-  z-index: 50;
+  z-index: 60;
 
   @media screen and (min-width: ${({ theme }) => theme.tablet}) {
     width: 50%;

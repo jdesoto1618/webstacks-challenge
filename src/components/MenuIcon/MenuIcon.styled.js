@@ -15,7 +15,7 @@ export const StyledIcon = styled.button`
   border: none;
   cursor: pointer;
   padding: 0;
-  z-index: 60;
+  z-index: 70;
 
   &:focus {
     outline: none;
