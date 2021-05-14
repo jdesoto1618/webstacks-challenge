@@ -89,17 +89,6 @@
   z-index: 10;
 }
 
-.mobile-nav-container {
-  position: absolute;
-  top: 4rem;
-  bottom: auto;
-  left: auto;
-  right: 4rem;
-  width: 3.5rem;
-  height: 3.5rem;
-  z-index: 50;
-}
-
 .mobile-nav-bars {
   position: absolute;
   width: 3.5rem;

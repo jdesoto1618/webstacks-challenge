@@ -1,6 +1,7 @@
 import * as React from "react"
 import { useState } from "react"
 import { Link } from "gatsby"
+import MenuIcon from "../MenuIcon/MenuIcon"
 import * as headerStyles from "../../styles/header.module.css"
 
 const Header = () => {
@@ -9,14 +10,12 @@ const Header = () => {
   return (
     <>
       <div className={headerStyles.mobileHomeLinkContainer}>
-        <Link className={headerStyles.homeNavLink}
-          to='/'
-          onClick={() => setIsOpen(true)}
-        />
+        <Link className={headerStyles.homeNavLink} to='/' />
       </div>
-      <Link className={headerStyles.mobileNavContainer} to='/'>
-        <span className={headerStyles.mobileNavBars}></span>
-      </Link>
+
+      <div className={headerStyles.mobileNavContainer}>
+        <MenuIcon></MenuIcon>
+      </div>
 
       <nav className={headerStyles.navbar}>
         <Link className={headerStyles.homeNavLink} to='/' />
