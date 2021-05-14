@@ -4,7 +4,7 @@ export const StyledMenu = styled.nav`
   display: flex;
   flex-direction: column;
   background: ${({ theme }) => theme.white};
-  width: 50%;
+  width: 40%;
   height: 100vh;
   text-align: left;
   padding: 8rem 4rem 0 4rem;
@@ -13,7 +13,7 @@ export const StyledMenu = styled.nav`
   bottom: auto;
   left: auto;
   right: 0;
-  transform: translateX(100%);
+  transform: ${({ isOpen }) => isOpen ? 'translateX(0px)' : 'translateX(100%)'};
   transition: transform 0.3s ease-in-out;
   z-index: 50;
   

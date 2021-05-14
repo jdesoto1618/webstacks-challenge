@@ -1,10 +1,11 @@
 import React from 'react';
+import { bool } from 'prop-types';
 import { StyledMenu } from './Menu.styled';
 import { Link } from "gatsby"
 
-const Menu = () => {
+const Menu = ({ isOpen }) => {
   return (
-    <StyledMenu>
+    <StyledMenu isOpen={isOpen}>
       <Link to='/'>What's included?</Link>
       <Link to='/'>Pricing</Link>
       <Link to='/'>Sign In</Link>
@@ -13,5 +14,8 @@ const Menu = () => {
   )
 }
 
+Menu.propTypes = {
+  open: bool.isRequired,
+};
 
 export default Menu

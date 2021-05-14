@@ -15,8 +15,8 @@ const Header = () => {
       </div>
 
       <div className={headerStyles.mobileNavContainer}>
-        <MenuIcon></MenuIcon>
-        <Menu></Menu>
+        <MenuIcon isOpen={isOpen} setIsOpen={setIsOpen} />
+        <Menu isOpen={isOpen} setIsOpen={setIsOpen} />
       </div>
 
       <nav className={headerStyles.navbar}>
