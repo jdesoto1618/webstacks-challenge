@@ -1,16 +1,23 @@
 import * as React from "react"
+import { useState } from "react"
 import { Link } from "gatsby"
 import * as headerStyles from "../../styles/header.module.css"
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false)
+
   return (
     <>
       <div className={headerStyles.mobileHomeLinkContainer}>
-        <Link className={headerStyles.homeNavLink} to='/' />
+        <Link className={headerStyles.homeNavLink}
+          to='/'
+          onClick={() => setIsOpen(true)}
+        />
       </div>
       <Link className={headerStyles.mobileNavContainer} to='/'>
         <span className={headerStyles.mobileNavBars}></span>
       </Link>
+
       <nav className={headerStyles.navbar}>
         <Link className={headerStyles.homeNavLink} to='/' />
         <ul className={headerStyles.headerNavUl}>
