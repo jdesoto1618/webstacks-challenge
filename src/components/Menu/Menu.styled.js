@@ -4,7 +4,7 @@ export const StyledMenu = styled.nav`
   display: flex;
   flex-direction: column;
   background: ${({ theme }) => theme.white};
-  width: 40%;
+  width: 100%;
   height: 100vh;
   text-align: left;
   padding: 8rem 4rem 0 4rem;
@@ -16,6 +16,11 @@ export const StyledMenu = styled.nav`
   transform: ${({ isOpen }) => isOpen ? 'translateX(0px)' : 'translateX(100%)'};
   transition: transform 0.3s ease-in-out;
   z-index: 50;
+
+  @media screen and (min-width: ${({ theme }) => theme.tablet}) {
+    width: 50%;
+    max-width: 50rem;
+  }
   
   @media screen and (min-width: ${({ theme }) => theme.desktop__1024}) {
     display: none;
