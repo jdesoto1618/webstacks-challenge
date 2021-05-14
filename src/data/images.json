@@ -1,0 +1,22 @@
+[
+  {
+    "chopperImg": "../images/chopper.png",
+    "alt": "Chopper Drone", 
+    "name": "Chopper Drone"
+  },
+  {
+    "mobileImg": "../images/mobile-device.png",
+    "alt": "Mobile Device",
+    "name": "Mobile Device"
+  },
+  {
+    "vrImg": "../images/vr-headeset.png",
+    "alt": "VR Headset",
+    "name": "VR Headset"
+  },
+  {
+    "heroImg": "../images/hero-background.png",
+    "alt": "Hero Image",
+    "name": "Hero Image"
+  }
+]
