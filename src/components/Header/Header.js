@@ -2,6 +2,7 @@ import * as React from "react"
 import { useState } from "react"
 import { Link } from "gatsby"
 import MenuIcon from "../MenuIcon/MenuIcon"
+import Menu from "../Menu/Menu"
 import * as headerStyles from "../../styles/header.module.css"
 
 const Header = () => {
@@ -15,6 +16,7 @@ const Header = () => {
 
       <div className={headerStyles.mobileNavContainer}>
         <MenuIcon></MenuIcon>
+        <Menu></Menu>
       </div>
 
       <nav className={headerStyles.navbar}>
