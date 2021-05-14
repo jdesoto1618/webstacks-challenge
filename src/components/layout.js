@@ -6,22 +6,27 @@
  */
 
 import * as React from "react"
+import { ThemeProvider } from 'styled-components'
+import { GlobalStyles } from '../global'
+import { theme } from '../theme'
 import Header from "./Header/Header"
 import Hero from './Hero/Hero'
 import Cards from './Cards/Cards'
-import * as layoutStyles from '../styles/layout.module.css'
 
 const Layout = () => {
   return (
-    <div className={layoutStyles.pageContainer}>
-      <>
-        <Header />
-          <main>
-            <Hero />
-            <Cards />
-          </main>
-      </>
-    </div>
+    <ThemeProvider theme={theme}>
+      <div className='page-container'>
+        <>
+          <GlobalStyles />
+          <Header />
+            <main>
+              <Hero />
+              <Cards />
+            </main>
+        </>
+      </div>
+    </ThemeProvider>
   )
 }
 
