@@ -32,16 +32,10 @@ const Header = () => {
                 className={headerStyles.navLink} 
                 to={nav_link.link} 
                 id={nav_link.text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}>
-                {nav_link.text}
+                <span className={headerStyles.navLinkText}>{nav_link.text}</span>
               </Link>
             </li>
           ))}
-          <li className={headerStyles.headerNavLi}>
-            <Link className={headerStyles.navLink} to='/'>
-              <span className={headerStyles.getStarted}>Get started</span>
-              <span className={headerStyles.caretRight}>&gt;</span>
-            </Link>
-          </li>
         </ul>
       </nav>
     </>

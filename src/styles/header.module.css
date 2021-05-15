@@ -78,7 +78,7 @@
   transition: opacity 0.3s linear, bottom 0.3s linear;
 }
 
-.get-started {
+.nav-link-text {
   position: relative;
   z-index: 10;
 }
