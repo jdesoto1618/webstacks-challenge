@@ -98,14 +98,22 @@
   }
 
   .card {
-    width: 37rem;
+    width: 27rem;
     margin-right: 3rem;
     margin-bottom: 0;
     text-align: left;
   }
 
+  .card:nth-child(2) img {
+    right: -1.75rem;
+  }
+
   .card:last-of-type {
     margin-right: 0;
+  }
+
+  .card:last-of-type img {
+    right: -5rem;
   }
 
   .learn-more:before {
@@ -127,12 +135,6 @@
   .learn-more:hover:before {
     transform: scaleX(1.0);
     transform-origin: left;
-  }
-}
-
-@media screen and (min-width: 80em) {
-  .card {
-    width: 27rem;
   }
 }
 
