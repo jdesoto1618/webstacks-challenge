@@ -5,7 +5,6 @@ import { Link } from "gatsby"
 import MenuIcon from "../MenuIcon/MenuIcon"
 import Menu from "../Menu/Menu"
 import { menuData } from "../../data/MenuData"
-import theme from "../../theme"
 import * as headerStyles from "../../styles/header.module.css"
 
 const Header = () => {
