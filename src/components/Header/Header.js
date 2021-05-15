@@ -28,7 +28,10 @@ const Header = () => {
         <ul className={headerStyles.headerNavUl}>
           {menuData.map((nav_link, index) => (
             <li className={headerStyles.headerNavLi} key={index}>
-              <Link className={headerStyles.navLink} to={nav_link.link}>
+              <Link 
+                className={headerStyles.navLink} 
+                to={nav_link.link} 
+                id={nav_link.text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}>
                 {nav_link.text}
               </Link>
             </li>
