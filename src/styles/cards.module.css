@@ -140,12 +140,22 @@
 
 @media screen and (min-width: 100em) {
   .card {
-    width: 35rem;
-  }
-}
-
-@media screen and (min-width: 106.25em) {
-  .card {
     width: 37rem;
+  }
+
+  .card-image {
+    width: 20rem;
+    top: -7.8rem;
+  }
+
+  .card:nth-child(2) img {
+    top: -7.5rem;
+    right: -2.6rem;
+  }
+
+  .card:last-of-type img {
+    width: 24rem;
+    top: -7.5rem;
+    right: -9rem;
   }
 }
