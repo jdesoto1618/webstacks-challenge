@@ -4,7 +4,7 @@ export const StyledMenu = styled.nav`
   display: flex;
   flex-direction: column;
   background: ${({ theme }) => theme.white};
-  width: 100%;
+  width: 80%;
   height: 100vh;
   text-align: left;
   padding: 8rem 4rem 0 4rem;
