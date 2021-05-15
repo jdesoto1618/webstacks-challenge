@@ -93,13 +93,15 @@
   z-index: 10;
 }
 
+@media screen and (min-width: 40em) {
+  .hero-title-large {
+    max-width: 42rem;
+  }
+}
+
 @media screen and (min-width: 64em) {
   .hero-tagline-container {
     padding-top: 3rem;
-  }
-
-  .hero-title-large span {
-    display: block;
   }
 
   .weekend-text:hover {
