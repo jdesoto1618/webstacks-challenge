@@ -8,12 +8,6 @@
   height: 100%;
 }
 
-.hero-container {
-  background-image: url('../images/hero-background.png');
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
 .hero-overlay {
   background: linear-gradient(90deg, #000000 20.29%, rgba(0, 0, 0, 0) 100%), linear-gradient(360deg, #000000 13.96%, rgba(0, 0, 0, 0) 107.34%);
 }
