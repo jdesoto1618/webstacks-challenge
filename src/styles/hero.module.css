@@ -41,6 +41,8 @@
   z-index: 50;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .get-started-button, .request-demo-button {
@@ -51,10 +53,12 @@
   transition: background-color 0.3s linear;
   position: relative;
   z-index: 1;
+  width: 17.7rem;
+  text-align: center;
 }
 
 .get-started-button {
-  margin-right: 2rem;
+  margin-bottom: 2rem;
 }
 
 .get-started-button:before, .request-demo-button:before {
@@ -96,6 +100,20 @@
 @media screen and (min-width: 40em) {
   .hero-title-large {
     max-width: 42rem;
+  }
+
+  .hero-cta-container {
+    flex-direction: row;
+  }
+
+  .get-started-button, .request-demo-button {
+    width: auto;
+    text-align: left;
+  }
+
+  .get-started-button {
+    margin-bottom: 0;
+    margin-right: 2rem;
   }
 }
 
