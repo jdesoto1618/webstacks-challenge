@@ -9,7 +9,7 @@
 }
 
 .card {
-  width: 37rem;
+  width: 85%;
   min-height: 24rem;
   background-color: #fff;
   border-radius: 0.4rem;
@@ -27,7 +27,7 @@
 }
 
 .card-image {
-  width: 10rem;
+  width: 33.33%
 }
 
 .card-text-container {
@@ -47,6 +47,7 @@
   margin-top: 0;
   margin-bottom: 2.4rem;
   font-size: 1.44rem;
+  text-align: left;
 }
 
 .cta-text {
@@ -64,6 +65,10 @@
   .cards-container {
     margin-top: 9rem;
     padding-bottom: 9rem;
+  }
+
+  .card {
+    width: 45rem;
   }
 
   .card-image {
@@ -93,6 +98,7 @@
   }
 
   .card {
+    width: 37rem;
     margin-right: 3rem;
     margin-bottom: 0;
     text-align: left;
