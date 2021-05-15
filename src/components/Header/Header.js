@@ -1,9 +1,11 @@
 import * as React from "react"
 import { useState, useRef } from "react"
-import { useOnClickOutside } from '../hooks';
+import { useOnClickOutside } from '../hooks'
 import { Link } from "gatsby"
 import MenuIcon from "../MenuIcon/MenuIcon"
 import Menu from "../Menu/Menu"
+import { menuData } from "../../data/MenuData"
+import theme from "../../theme"
 import * as headerStyles from "../../styles/header.module.css"
 
 const Header = () => {
@@ -25,15 +27,13 @@ const Header = () => {
       <nav className={headerStyles.navbar}>
         <Link className={headerStyles.homeNavLink} to='/' />
         <ul className={headerStyles.headerNavUl}>
-          <li className={headerStyles.headerNavLi}>
-            <Link className={headerStyles.navLink} to='/'>What's included?</Link>
-          </li>
-          <li className={headerStyles.headerNavLi}>
-            <Link className={headerStyles.navLink} to='/'>Pricing</Link>
-          </li>
-          <li className={headerStyles.headerNavLi}>
-            <Link className={headerStyles.navLink} to='/'>Sign In</Link>
-          </li>
+          {menuData.map((nav_link, index) => (
+            <li className={headerStyles.headerNavLi} key={index}>
+              <Link className={headerStyles.navLink} to={nav_link.link}>
+                {nav_link.text}
+              </Link>
+            </li>
+          ))}
           <li className={headerStyles.headerNavLi}>
             <Link className={headerStyles.navLink} to='/'>
               <span className={headerStyles.getStarted}>Get started</span>

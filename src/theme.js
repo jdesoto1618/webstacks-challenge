@@ -11,5 +11,5 @@ export const theme = {
   desktop__1280:  '80em',
   desktop__1440:  '90em',
   desktop__1600:  '100em',
-  desktop__1700:  '106.25em'
+  desktop__1700:  '106.25em',
 }
