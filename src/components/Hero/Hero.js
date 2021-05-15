@@ -28,7 +28,7 @@ const Hero = () => {
         <>
           <div className={heroStyles.heroContainer}>
             {data.allContentfulLayoutHeroImage.edges.map( ({node, index}) => (
-              <img key={index} src={node.backgroundImage.fluid.src} alt='Hero background image'/>
+              <img key={index} src={node.backgroundImage.fluid.src} alt='Hero background'/>
             ))}
           </div>
           <div className={heroStyles.heroOverlay}></div>

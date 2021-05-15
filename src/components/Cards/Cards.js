@@ -28,7 +28,7 @@ const Cards = () => {
           <div className={cardStyles.cardsContainer}>
             {data.allContentfulCardsInfo.edges.map( ({node, index}) => (
               <div className={cardStyles.card} key={index}>
-                <img src={node.cardImage.fluid.src} className={cardStyles.cardImage} />
+                <img src={node.cardImage.fluid.src} className={cardStyles.cardImage} alt={node.cardTagline} />
                 <div className={cardStyles.cardTextContainer}>
                   <h5 className={cardStyles.cardTitle}>{node.cardTagline}</h5>
                   <p className={cardStyles.cardTagline}>{node.cardDescription}</p>
