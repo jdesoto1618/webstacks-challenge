@@ -10,6 +10,11 @@
 
 .hero-overlay {
   background: linear-gradient(90deg, #000000 20.29%, rgba(0, 0, 0, 0) 100%), linear-gradient(360deg, #000000 13.96%, rgba(0, 0, 0, 0) 107.34%);
+  display: none;
+}
+
+.hero-container {
+  height: 50rem;
 }
 
 .hero-container img {
@@ -118,6 +123,14 @@
 }
 
 @media screen and (min-width: 64em) {
+  .hero-overlay {
+    display: block;
+  }
+
+  .hero-container {
+    height: 100%;
+  }
+
   .hero-tagline-container {
     padding-top: 3rem;
   }
