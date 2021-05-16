@@ -41,6 +41,11 @@
   margin-top: 0;
 }
 
+.weekend-text {
+  display: block;
+  max-width: 36rem;
+}
+
 .hero-cta-container {
   position: relative;
   z-index: 50;
@@ -110,6 +115,11 @@
   .hero-cta-container {
     flex-direction: row;
   }
+
+  .weekend-text {
+    max-width: none;
+  }
+
 
   .get-started-button, .request-demo-button {
     width: auto;
