@@ -5,7 +5,7 @@ export const StyledIcon = styled.button`
   top: 3.75rem;
   bottom: auto;
   left: auto;
-  right: 4rem;
+  right: 3rem;
   width: 2.5rem;
   height: 2.5rem;
   background: transparent;
