@@ -6,10 +6,7 @@ export const StyledIcon = styled.button`
   bottom: auto;
   left: auto;
   right: 4rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 3.25rem;
+  width: 2.5rem;
   height: 2.5rem;
   background: transparent;
   border: none;
@@ -22,23 +19,28 @@ export const StyledIcon = styled.button`
   }
 
   .menu-bars {
-    width: 3rem;
-    height: 0.3rem;
+    width: 100%;
+    height: 0.2rem;
     background: ${({ theme }) => theme.white};
     border-radius: 1rem;
+    margin-bottom: 0.4rem;
     transition: all 0.3s linear;
-    position: relative;
-    transform-origin: 0.1rem;
+    // transform-origin: 0.1rem;
     transform: rotate(0deg) scaleX(1.0) translate(0px, 0px);
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
   }
 
   &.opened {
     .menu-bars {
       background: ${({ theme }) => theme.black};
+      margin-bottom: 0;
     }
 
     .bar-1 {
-      transform: rotate(45deg) translateX(-0.3rem);
+      transform: rotate(45deg) translate(0px, 0.3rem);
     }
 
     .bar-2 {
@@ -46,7 +48,7 @@ export const StyledIcon = styled.button`
     }
 
     .bar-3 {
-      transform: rotate(-45deg) translate(-0.2rem, -0.1rem);
+      transform: rotate(-45deg) translate(0px, -0.3rem);
     }
   }
 `
