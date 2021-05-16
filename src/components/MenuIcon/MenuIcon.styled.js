@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const StyledIcon = styled.button`
   position: absolute;
-  top: 3rem;
+  top: 3.75rem;
   bottom: auto;
   left: auto;
   right: 4rem;
